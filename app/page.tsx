@@ -140,7 +140,7 @@ export default function Home() {
       </div>
       Made by{" "}
       <a
-        href="https:instagram.com/mvhikhn"
+        href="https://www.instagram.com/mvhikhn/"
         className="underline text-white hover:text-red-500"
         style={{ color: "white" }}
       >
