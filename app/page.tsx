@@ -52,7 +52,7 @@ export default function Home() {
         const locationRes = await axios.get(
           `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`,
         );
-        const display_name = locationRes.data.display_name || "over the ocean";
+        const display_name = locationRes.data.display_name || "Over the ocean";
         setLocationName(display_name);
 
         const dhakaRes = await axios.get(
@@ -113,14 +113,14 @@ export default function Home() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center min-h-screen p-4">
-      <h3 className="text-2xl mb-4 font-bold text-right">
+      <p className="text-2xl mb-4 font-bold text-right">
         Live informations about the ISS
-      </h3>
+      </p>
       <div
         ref={mapContainer}
         id="map-container"
         className="w-full h-full max-w-screen max-h-screen rounded"
-        style={{ height: "80vh" }}
+        style={{ height: "70vh" }}
       />
       {distanceToDhaka !== null && (
         <p className="mt-4 text-right">
