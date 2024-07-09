@@ -1,0 +1,40 @@
+/* global.css */
+body {
+    margin: 10px;
+    padding: 2%;
+    overflow: visible;
+    font-family: "Inter";
+    background-color: #0e100f;
+    color: #ffffff;
+}
+
+#map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+#map-wrapper {
+    width: 100%;
+    height: 55vh;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.content {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .content {
+        font-size: 0.8rem;
+        max-width: 90%;
+    }
+}
